@@ -10,10 +10,12 @@ public class readRainfall {
 		   
 	        try {
 	        	
-	            FileReader fileReader = new FileReader("rainfall_data.txt");
+	        	String sourceFile = "rainfall_data.txt";
+	        	String line;
+	        	
+	            FileReader fileReader = new FileReader(sourceFile);
 	            BufferedReader bufferedReader = new BufferedReader(fileReader);
 
-	            String line;
 	            while ((line = bufferedReader.readLine()) != null) {
 	                System.out.println(line);
 	            }

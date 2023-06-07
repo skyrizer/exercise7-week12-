@@ -8,8 +8,12 @@ import java.io.PrintWriter;
 public class writeRainfall {
 
 	public static void main(String[] args) {
-        try {
-            FileWriter fileWriter = new FileWriter("rainfall_data.txt");
+        
+		try {
+        	
+			String sourceFile = "rainfall_data.txt";
+			
+            FileWriter fileWriter = new FileWriter(sourceFile);
             BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
             PrintWriter printWriter = new PrintWriter(bufferedWriter);
 
@@ -23,12 +27,16 @@ public class writeRainfall {
             int[] rainfallReadings = {5, 0, 0, 4, 1, 0};
 
             for (int i = 0; i < rainfallReadings.length; i++) {
-                printWriter.println("Day " + (i + 1) + ": " + rainfallReadings[i]);
+                
+            	printWriter.println("Day " + (i + 1) + ": " + rainfallReadings[i]);
+            
             }
 
             printWriter.close();
+            
             System.out.println("Data creation has ended.");
-        } catch (IOException e) {
+       
+		} catch (IOException e) {
             e.printStackTrace();
         }
     }
