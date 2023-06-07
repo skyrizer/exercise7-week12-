@@ -10,7 +10,7 @@ public class readRainfall {
 		   
 	        try {
 	        	
-	            FileReader fileReader = new FileReader("data.txt");
+	            FileReader fileReader = new FileReader("rainfall_data.txt");
 	            BufferedReader bufferedReader = new BufferedReader(fileReader);
 
 	            String line;

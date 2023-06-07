@@ -9,7 +9,7 @@ public class writeRainfall {
 
 	public static void main(String[] args) {
         try {
-            FileWriter fileWriter = new FileWriter("data.txt");
+            FileWriter fileWriter = new FileWriter("rainfall_data.txt");
             BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
             PrintWriter printWriter = new PrintWriter(bufferedWriter);
 
